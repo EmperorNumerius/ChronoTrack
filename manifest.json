@@ -1,4 +1,22 @@
 {
   "manifest_version": 3,
-    "name": "ChronoTrack",
+  "name": "ChronoTrack",
+  "version": "1.0",
+  "description": "Track time spent on different websites across devices",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  }
 }
